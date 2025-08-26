@@ -1,9 +1,6 @@
 
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-  <meta name="google-site-verification" content="9QVTkbGpXPV0ZpAuBUIEHX1u7iaaLoclM4HoDKTL8Bc" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How Are You?</title>
 <style>
 body {
