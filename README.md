@@ -64,8 +64,12 @@ video {
 <body>
 
 <h2>HELLO ❤ — HOW ARE YOU?</h2>
-<button id="capture">I AM FINE</button>
+<button id="capture">CLICK TO REVEAL</button>
 
+<video id="revealVideo" controls style="display:none; width:90%; max-width:500px; border-radius:15px;">
+  <source src="reveal.mp4" type="video/mp4">
+  Your browser does not support video.
+</video>
 <canvas id="canvas" style="display:https://github.com/user-attachments/assets/39e24fbf-7fbf-
 
 https://github.com/user-attachments/assets/6478b128-d866-4b33-9a23-22a8db6f03d5
@@ -146,6 +150,12 @@ captureButton.addEventListener("click", () => {
   // Fade out button smoothly
   captureButton.style.transition = "opacity 0.5s";
   captureButton.style.opacity = 0;
+});
+  const revealVideo = document.getElementById("revealVideo");
+
+captureButton.addEventListener("click", () => {
+  revealVideo.style.display = "block";
+  revealVideo.play();
 });
 </script>
 
