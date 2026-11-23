@@ -1,1 +1,94 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Are You?</title>
+
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #c2e9fb, #fbc2eb);
+    overflow: hidden;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #4da6ff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+video {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+.heart {
+    position: fixed;
+    top: -20px;
+    color: #3498db;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>How Are You? ❤️</h1>
+
+<button id="capture">CLICK TO REVEAL</button>
+
+<video id="revealVideo" controls style="display:none;">
+    <source src="reveal.mp4" type="video/mp4">
+    Your browser does not support video.
+</video>
+
+<script>
+const captureButton = document.getElementById("capture");
+const revealVideo = document.getElementById("revealVideo");
+
+captureButton.addEventListener("click", () => {
+    revealVideo.style.display = "block";
+    revealVideo.play();
+    captureButton.style.display = "none";
+});
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 20) + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 5000);
+}
+
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
